@@ -1,0 +1,563 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 15px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #000000 !important;
+  /* Replace "your-desired-color" with your desired background color */
+}
+
+.navbar-brand img {
+  height: 50px;
+  /* Adjust the height as needed */
+  width: auto;
+  /* This will maintain the aspect ratio */
+
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  /* Adjust the distance of the line from the link */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  /* Initial width is zero */
+  height: 2px;
+  /* Adjust the height of the line as per your preference */
+  background-color: #fff;
+  /* Adjust the color of the line as per your preference */
+  opacity: 0;
+  /* Initially hidden */
+  transition: width 0.5s ease, opacity 0.5s ease;
+  /* Add transition for smooth movement */
+}
+
+.navbar-nav .nav-item:hover::after {
+  width: 70%;
+  /* Adjust the width of the line as per your preference */
+  opacity: 1;
+  /* Show the line on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item::after {
+    display: none;
+    /* Hide the line on mobile */
+  }
+}
+
+.my-3 {
+  background-color: #fff;
+}
+
+
+
+
+/* Custom styling for the dropdown menu */
+.dropdown-menu {
+  background-color: #000;
+}
+
+/* Custom styling for the dropdown menu links */
+.dropdown-menu a {
+  color: #fff;
+}
+
+/* Custom styling for the dropdown menu links on hover */
+.dropdown-menu a:hover {
+  background-color: #cc9b25;
+  color: #fff;
+}
+
+/* Custom CSS for team section */
+/* .team-section {
+    background-color: #cc9b25;
+    padding: 100px 0;
+    margin-top: 70px;
+  }
+  
+  .team-section h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 0;
+  } */
+.contact-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  margin-top: 2px;
+}
+
+
+
+/* Custom styling for the consultant section */
+.consultant-section {
+  position: relative;
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+.consultant-image {
+  position: relative;
+  text-align: center;
+}
+
+.consultant-image img {
+  max-width: 100%;
+  max-height: 500%;
+  /* Adjust the image's height */
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(60%);
+}
+
+.consultant-image h1 {
+  position: absolute;
+  top: 40%;
+  /* Adjust the vertical position */
+  left: 50%;
+  /* Adjust the horizontal position */
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #ffffff;
+  /* Semi-transparent background */
+  padding: 10px 20px;
+  z-index: 2;
+  /* Ensure the heading appears on top */
+}
+
+
+
+
+
+.property-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.property-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  /* Add negative margin to counteract padding */
+}
+
+.property-category {
+  flex: 0 0 calc(25% - 30px);
+  /* Adjust width and spacing as needed */
+  text-align: center;
+  margin: 15px;
+}
+
+.property-category img {
+  width: 150px;
+  /* Adjust image width as needed */
+  height: 150px;
+  /* Adjust image height as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.property-category h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.property-category p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+/* Modal styling */
+.modal-content {
+  border: 0.5px solid #ccc;
+  /* Add a border to the modal content */
+  background-color: #fff;
+  /* Set a background color */
+  padding: 5px;
+  /* Adjust padding for content */
+}
+
+.modal-header {
+  border-bottom: none;
+  /* Remove border from modal header */
+  padding: 10px 20px;
+}
+
+.modal-body {
+  padding: 20px;
+  /* Adjust padding for modal body */
+}
+
+.modal-title {
+  font-size: 24px;
+  /* Increase font size for modal title */
+  font-weight: bold;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-body p {
+  font-size: 16px;
+  color: #333;
+  /* Adjust text color */
+}
+
+.project-showcase-section .card {
+  border: 1px solid #ddd;
+  /* Add a border to the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box-shadow */
+  transition: transform 0.3s;
+}
+
+.project-showcase-section .card:hover {
+  transform: translateY(-5px);
+  /* Apply a slight hover effect */
+}
+
+.project-showcase-section .btn-dark {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+  color: #fff;
+  /* Adjust button text color */
+}
+
+
+
+
+/* Custom CSS for Project Showcase section */
+.project-showcase-section {
+  padding: 50px 0;
+  background-color: #f0f0f0ed;
+}
+
+.project-showcase-section .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-showcase-section .card-img-top {
+  height: 200px;
+
+  object-fit: contain;
+  /* Try using different options here */
+}
+
+.project-showcase-section .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase-section .card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-showcase-section .btn-primary {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+}
+
+.project-showcase-section {
+  padding: 50px 0;
+}
+
+.project-showcase-section .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-showcase-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.project-showcase-section .card-img-top {
+  height: 300px;
+  /* You can adjust the height as needed */
+  object-fit: cover;
+  /* Use 'cover' to fill the container while maintaining aspect ratio */
+  width: 100%;
+  /* Set the width to 100% to maintain the aspect ratio */
+}
+
+
+.project-showcase-section .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase-section .card-text {
+  margin-bottom: 20px;
+}
+
+.project-showcase-section2 {
+  background-color: #cc9b25;
+}
+
+/* Modals */
+.slider-container {
+  width: 100%;
+  height: 400px;
+  /* Adjust as needed */
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 100%;
+}
+
+/* Customize as needed for responsiveness */
+@media (max-width: 768px) {
+  .modal-lg {
+    max-width: 80%;
+  }
+
+  .col-lg-6 {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+
+.modal-dialog {
+  max-width: 60%;
+  height: 60vh;
+  /* Adjust as needed */
+  margin: 1.75rem auto;
+  /* Center the modal */
+}
+
+.modal-body {
+
+  padding: 30px;
+  /* Adjust padding as needed */
+}
+
+/* Adjust the image size inside the modal */
+.modal-body .carousel-inner img {
+  height: 400px;
+  /* Adjust image height as needed */
+}
+
+/* Adjust the project info size inside the modal */
+.modal-body .project-info {
+  padding: 20px;
+}
+
+
+
+
+/* Custom styling for carousel captions */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent background color */
+  color: white;
+  /* Text color */
+  padding: 20px;
+  /* Padding around the content */
+  position: absolute;
+  /* Positioning */
+  bottom: 0;
+  /* Position at the bottom of the carousel item */
+  left: 0;
+  /* Position at the left of the carousel item */
+  right: 0;
+  /* Position at the right of the carousel item */
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  /* Font size for heading */
+  margin-bottom: 10px;
+  /* Spacing below heading */
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  /* Font size for paragraphs */
+  margin-bottom: 5px;
+  /* Spacing below paragraphs */
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #000000, #cc9b25, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.project-showcase-section .card {
+  border: 1px solid #ddd;
+  /* Add a border to the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box-shadow */
+  transition: transform 0.3s;
+}
+
+.project-showcase-section .card:hover {
+  transform: translateY(-5px);
+  /* Apply a slight hover effect */
+}
+
+.project-showcase-section .btn-dark {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+  color: #fff;
+  /* Adjust button text color */
+}
+
+
+
+
+/* Custom CSS for Project Showcase section */
+.project-showcase2-section {
+  padding: 50px 0;
+  background-color: #251f1fed;
+}
+
+.project-showcase2-section .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-showcase2-section .card-img-top {
+  height: 200px;
+
+  object-fit: contain;
+  /* Try using different options here */
+}
+
+.project-showcase2-section .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase2-section .card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-showcase2-section .btn-primary {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+}
+
+.project-showcase-section {
+  padding: 50px 0;
+}
+
+.project-showcase2-section .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-showcase2-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.project-showcase2-section .card-img-top {
+  height: 300px;
+  /* You can adjust the height as needed */
+  object-fit: cover;
+  /* Use 'cover' to fill the container while maintaining aspect ratio */
+  width: 100%;
+  /* Set the width to 100% to maintain the aspect ratio */
+}
+
+
+.project-showcase2-section .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase-section .card-text {
+  margin-bottom: 20px;
+}
+
+.project-showcase2-section2 {
+  background-color: #cc9b25;
+}

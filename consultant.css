@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5
+{
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 15px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #000 !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+.navbar-nav .nav-item:hover::after {
+  width: 70%;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item::after {
+    display: none;
+  }
+}
+
+.my-3 {
+  background-color: #fff;
+}
+
+
+
+
+.dropdown-menu {
+  background-color: #000;
+}
+
+.dropdown-menu a {
+  color: #fff;
+}
+
+/* Custom styling for the dropdown menu links on hover */
+.dropdown-menu a:hover {
+  background-color: #cc9b25;
+  color: #fff;
+}
+
+.consultant-section {
+  position: relative;
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+.consultant-image {
+  position: relative;
+  text-align: center;
+}
+
+.consultant-image img {
+  max-width: 100%;
+  max-height: 500%;
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(60%);
+}
+
+.consultant-image h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #ffffff;
+
+  padding: 10px 20px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+.project-showcase2-section {
+  padding: 50px 0;
+  background-color: #251f1fed;
+}
+
+.project-showcase2-section .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-showcase2-section .card-img-top {
+  height: 300px;
+
+  object-fit: contain;
+}
+
+.project-showcase2-section .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase2-section .card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-showcase2-section .btn-primary {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+}
+
+.project-showcase-section {
+  padding: 50px 0;
+}
+
+.project-showcase2-section .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-showcase2-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.project-showcase2-section .card-img-top {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.project-showcase2-section .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase-section .card-text {
+  margin-bottom: 20px;
+}
+
+.project-showcase2-section2 {
+  background-color: #cc9b25;
+}
+
+
+
+.property-categories-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.property-category {
+  flex: 0 0 auto;
+  width: 300px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  border: 2px solid #cc9b25;
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-category h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.property-category p {
+  font-size: 14px;
+  color: #555;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #cc9b25;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.slider-prev {
+  left: 0;
+}
+
+.slider-next {
+  right: 0;
+}
+
+
+@media (max-width: 768px) {
+  .property-category {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .circle-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .property-category {
+    margin: 0 0 10px;
+  }
+
+  .circle-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .property-category h3 {
+    font-size: 16px;
+  }
+
+  .property-category p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+.card {
+  height: 100%;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.project-showcase-section {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.project-showcase-section .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-showcase-section .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-showcase-section .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase-section .card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-showcase-section .btn-primary {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+}
+
+.project-showcase-section {
+  padding: 50px 0;
+}
+
+.project-showcase-section .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-showcase-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.project-showcase-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-showcase-section .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-showcase-section .card-text {
+  margin-bottom: 20px;
+}
+
+/* Modals */
+.slider-container {
+  width: 100%;
+  height: 400px;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 100%;
+}
+
+/* Customize as needed for responsiveness */
+@media (max-width: 768px) {
+  .modal-lg {
+    max-width: 80%;
+  }
+
+  .col-lg-6 {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+
+.modal-dialog {
+  max-width: 90%;
+  height: 90vh;
+
+  margin: 1.75rem auto;
+
+}
+
+.modal-body {
+
+  padding: 30px;
+
+}
+
+.modal-body .carousel-inner img {
+  height: 400px;
+
+}
+
+.modal-body .project-info {
+  padding: 20px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  color: white;
+
+  padding: 20px;
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+
+  margin-bottom: 10px;
+
+}
+
+.carousel-caption p {
+  font-size: 16px;
+
+  margin-bottom: 5px;
+
+}
+
+.btn-dark {
+  background-color: #cc9b25;
+  border-color: #cc9b25;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #000000;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #cc9b25;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

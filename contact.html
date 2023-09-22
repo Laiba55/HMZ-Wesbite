@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-HMZ</title>
+  <link rel="icon" href="loge.png" type="image/png" sizes="48x48">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.PNG" alt="Your Logo Alt Text"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">Intro</a>
+              <a class="dropdown-item" href="team.html">Our Team</a>
+
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="consultant.html">Consultants</a>
+              <a class="dropdown-item" href="realtors.html">Realtors</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <!-- Map on the left side -->
+      <div class="col-md-6" data-aos="zoom-in-up">
+        <div class="map" style="position: relative; padding-top: 75%;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.891901256372!2d67.0320497!3d24.9026538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339b315dd62cd%3A0x4814990e74e37937!2sRashid%20Minhas%20Rd%2C%20Gulistan-e-Johar%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2075050!5e0!3m2!1sen!2s!4v1627760318300!5m2!1sen!2s"
+            width="100%" height="110%" style="position: absolute; top: 0; left: 0; border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <!-- Contact form on the right side -->
+      <div class="col-md-6"  data-aos="zoom-in-up">
+        <div class="contact-form">
+          <h3>Contact Us</h3>
+          <form action="" method="POST" id="registrationform" onsubmit="formSubmit(event)">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" name="message" placeholder="Hello, I would like to..." required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-dark btn-block send-message-btn">Send Message</button>
+            </div>
+            <div class="alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.891901256372!2d67.0320497!3d24.9026538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339b315dd62cd%3A0x4814990e74e37937!2sRashid%20Minhas%20Rd%2C%20Gulistan-e-Johar%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2075050!5e0!3m2!1sen!2s!4v1627760318300!5m2!1sen!2s"
+    width="100%" height="400" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+
+  </div>
+  </div>
+  </div>
+ -->
+
+
+
+
+
+
+ <!-- Footer -->
+ <footer class="text-center text-lg-start text-white" style="background-color: #000">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Explore HMZ</h6>
+          <p>
+            <a href="index.html" class="text-white">Home</a>
+          </p>
+          <p>
+            <a href="intro.html" class="text-white">About Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
+          <p>
+            <a href="realtorsprojects.html" class="text-white">Parkview City Islamabad</a>
+          </p>
+          <p>
+            <a href="realtorsproject2.html" class="text-white">Connekt 2.0 Karachi</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+          <p>
+            <a href="#" class="text-white">Services</a>
+          </p>
+          <p>
+            <a href="consultant.html" class="text-white">Consultants</a>
+          </p>
+          <p>
+            <a href="realtors.html" class="text-white">Realtors</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="fas fa-home mr-3"></i>Office 57, 4th Floor, Rj Mall,<br>Rashid Minhas Road,<br>Karachi</p>
+          <p><i class="fas fa-envelope mr-3"></i><a href="mailto:admin@hmzconsultants.com" class="text-white">admin@hmzconsultants.com</a></p>
+          <p><i class="fas fa-phone mr-3"></i>+92315005234</p>
+          <p><i class="fas fa-print mr-3"></i>+923100222913</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+    <hr class="my-3">
+
+    <!-- Section: Copyright -->
+    <section class="p-3 pt-0">
+      <div class="row d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+          <!-- Copyright -->
+          <div class="p-3">
+            &copy; 2023 HMZ CONSULTANTS & REALTORS
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/hmzconsultant/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline-light btn-floating m-1">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.link/1hryek" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline-light btn-floating m-1">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <!-- Google -->
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-floating m-1">
+            <i class="fab fa-google"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="#" class="btn btn-outline-light btn-floating m-1" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+    </section>
+    <!-- Section: Copyright -->
+  </div>
+  <!-- Grid container -->
+</footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script type="module">
+    
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+  
+        const firebaseConfig = {
+          apiKey: "AIzaSyA7SHNQJETSm8PKfozTOFsMgvCgOhVJmyg",
+          authDomain: "hmz-consultants-realtors.firebaseapp.com",
+          databaseURL: "https://hmz-consultants-realtors-default-rtdb.firebaseio.com",
+          projectId: "hmz-consultants-realtors",
+          storageBucket: "hmz-consultants-realtors.appspot.com",
+          messagingSenderId: "1060280777180",
+          appId: "1:1060280777180:web:e0373b8a398296cb3d7719",
+          measurementId: "G-CJ26Y0CZ4D"
+      };
+  
+        // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+  
+      import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+  
+      //listen for submit event//(1)
+      document
+        .getElementById('registrationform')
+        .addEventListener('submit', formSubmit);
+  
+      //Submit form(2)
+      function formSubmit(e) {
+        e.preventDefault();
+        // Get Values from the DOM
+        let name = document.querySelector('#name').value;
+        let email = document.querySelector('#email').value;
+        let phone = document.querySelector('#phone').value;
+        let message = document.querySelector('#message').value;
+  
+        //send message values(3)
+        sendMessage(name, email, phone, message);
+      }
+  
+      //Send Message to Firebase(4)
+      function sendMessage(name, email, phone, message) {
+    const database = getDatabase();
+    const randomId = Math.floor(Math.random() * 10000000);
+  
+    set(ref(database, 'users/' + randomId), {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    })
+      .then(() => {
+        // Show success alert
+        showAlert('Message sent successfully!', 'success');
+        document.getElementById('registrationform').reset();
+      })
+      .catch((error) => {
+        // Show error alert
+        showAlert('Error: ' + error.message, 'danger');
+      });
+  }
+  
+  // Function to show an alert
+  function showAlert(message, type) {
+    const alertDiv = document.querySelector('.alert');
+    alertDiv.innerHTML = message;
+    alertDiv.style.display = 'block';
+    alertDiv.classList.add('alert-' + type);
+  
+    // Hide the alert after 7 seconds
+    setTimeout(() => {
+      alertDiv.style.display = 'none';
+      alertDiv.classList.remove('alert-' + type);
+    }, 7000);
+  }
+  
+    </script>
+  </body>
+  
+  </html>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>

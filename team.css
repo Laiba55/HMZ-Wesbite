@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5{
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 15px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #000 !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+.navbar-nav .nav-item:hover::after {
+  width: 70%;
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-item::after {
+    display: none;
+  }
+}
+
+.my-3 {
+  background-color: #fff;
+}
+
+
+.dropdown-menu {
+  background-color: #000;
+}
+
+
+.dropdown-menu a {
+  color: #fff;
+}
+
+
+.dropdown-menu a:hover {
+  background-color: #cc9b25;
+  color: #fff;
+}
+
+.team-section {
+  background: linear-gradient(180deg, rgba(83, 60, 2, 0.6) 0%, rgba(204, 155, 37, 0.9) 100%);
+  padding: 100px 0;
+  margin-top: 70px;
+  color: #ffffff;
+}
+
+.team-section h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.team-list-section {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.team-member-box {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.team-member-box img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.team-member-box:hover img {
+  transform: scale(1.1);
+}
+
+.team-member-box .linkedin-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0077B5;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.team-member-box:hover .linkedin-button {
+  opacity: 1;
+}
+
+.member-details {
+  margin-top: 20px;
+}
+
+.member-details h3 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.member-details p {
+  font-size: 16px;
+  color: #000;
+}
